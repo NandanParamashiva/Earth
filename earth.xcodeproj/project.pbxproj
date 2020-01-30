@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6121092C23E374BE00578F07 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6121092B23E374BE00578F07 /* main.cpp */; };
+		6121093323E376ED00578F07 /* testFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6121093223E376ED00578F07 /* testFile.cpp */; };
+		6121093923E378AC00578F07 /* callback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6121093723E378AC00578F07 /* callback.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		6121092823E374BE00578F07 /* earth */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = earth; sourceTree = BUILT_PRODUCTS_DIR; };
 		6121092B23E374BE00578F07 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6121093223E376ED00578F07 /* testFile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testFile.cpp; sourceTree = "<group>"; };
+		6121093423E3776C00578F07 /* testFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testFile.h; sourceTree = "<group>"; };
+		6121093723E378AC00578F07 /* callback.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = callback.cpp; sourceTree = "<group>"; };
+		6121093D23E37C2200578F07 /* callback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = callback.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +47,10 @@
 		6121091F23E374BE00578F07 = {
 			isa = PBXGroup;
 			children = (
+				6121093A23E37A0A00578F07 /* try */,
 				6121092A23E374BE00578F07 /* earth */,
 				6121092923E374BE00578F07 /* Products */,
+				6121092B23E374BE00578F07 /* main.cpp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +65,19 @@
 		6121092A23E374BE00578F07 /* earth */ = {
 			isa = PBXGroup;
 			children = (
-				6121092B23E374BE00578F07 /* main.cpp */,
+				6121093723E378AC00578F07 /* callback.cpp */,
+				6121093D23E37C2200578F07 /* callback.h */,
+				6121093223E376ED00578F07 /* testFile.cpp */,
+				6121093423E3776C00578F07 /* testFile.h */,
 			);
 			path = earth;
+			sourceTree = "<group>";
+		};
+		6121093A23E37A0A00578F07 /* try */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = try;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6121093923E378AC00578F07 /* callback.cpp in Sources */,
 				6121092C23E374BE00578F07 /* main.cpp in Sources */,
+				6121093323E376ED00578F07 /* testFile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
