@@ -47,7 +47,6 @@
 		6121091F23E374BE00578F07 = {
 			isa = PBXGroup;
 			children = (
-				6121093A23E37A0A00578F07 /* try */,
 				6121092A23E374BE00578F07 /* earth */,
 				6121092923E374BE00578F07 /* Products */,
 				6121092B23E374BE00578F07 /* main.cpp */,
@@ -71,13 +70,6 @@
 				6121093423E3776C00578F07 /* testFile.h */,
 			);
 			path = earth;
-			sourceTree = "<group>";
-		};
-		6121093A23E37A0A00578F07 /* try */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = try;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

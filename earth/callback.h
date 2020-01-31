@@ -9,6 +9,6 @@
 #ifndef callback_h
 #define callback_h
 
-int callbackEntry();
+void callbackEntry();
 
 #endif /* callback_h */
