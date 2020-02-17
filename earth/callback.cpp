@@ -143,7 +143,35 @@ void simpleCallback(std::string s, int i, int (*fptr)(int i)){
 }
 
 void callback1() {
+    
+    //////
+    // smart pointers:
+    std::weak_ptr<keyFunction> wPtr;
+    {
+    std::shared_ptr<keyFunction> Sptr = std::make_shared<keyFunction>();
+    Sptr->keyBind('1', &slide);
+        
+    wPtr = Sptr;
+    wPtr.lock()->keyBind('2', &jump);
+        std::cout<< "count:"<< wPtr.use_count();
+        
+        std::unique_ptr<keyFunction> uPtr(new keyFunction());
+        // std::unique_ptr<keyFunction> ttmp = uPtr; // << compilation error because we can not copy unique ptrs.
+    }
+    
+    if(wPtr.expired()){
+        if(std::shared_ptr<keyFunction> tmp= wPtr.lock()){
+            tmp->keyBind('1', &slide);
+        } else {
+            std::cout << "ref count 0" << std::endl;
+        }
+    }
+    
+    //////
+    
+    
     std::cout << "callback1" << std::endl;
+#if 0
     keyFunction k;
     
     k.keyBind('1', &slide);
@@ -154,13 +182,13 @@ void callback1() {
     
     
     simpleCallback("modOp", 108, &modOp);
-
+#endif
     return;
 }
 
 void callbackEntry(){
     std::cout << "callbackEntry" << std::endl;
     callback1();
-    callback2();
+    //callback2();
     
 }

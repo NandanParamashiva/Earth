@@ -10,6 +10,8 @@
 		6121092C23E374BE00578F07 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6121092B23E374BE00578F07 /* main.cpp */; };
 		6121093323E376ED00578F07 /* testFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6121093223E376ED00578F07 /* testFile.cpp */; };
 		6121093923E378AC00578F07 /* callback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6121093723E378AC00578F07 /* callback.cpp */; };
+		6126D9EC23F8F4AC00B5CBC6 /* couchbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6126D9EA23F8F4AC00B5CBC6 /* couchbase.cpp */; };
+		6126D9EF23FA0C0400B5CBC6 /* stringUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6126D9ED23FA0C0400B5CBC6 /* stringUtility.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		6121093423E3776C00578F07 /* testFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testFile.h; sourceTree = "<group>"; };
 		6121093723E378AC00578F07 /* callback.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = callback.cpp; sourceTree = "<group>"; };
 		6121093D23E37C2200578F07 /* callback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = callback.h; sourceTree = "<group>"; };
+		6126D9EA23F8F4AC00B5CBC6 /* couchbase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = couchbase.cpp; sourceTree = "<group>"; };
+		6126D9EB23F8F4AC00B5CBC6 /* couchbase.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = couchbase.hpp; sourceTree = "<group>"; };
+		6126D9ED23FA0C0400B5CBC6 /* stringUtility.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stringUtility.cpp; sourceTree = "<group>"; };
+		6126D9EE23FA0C0400B5CBC6 /* stringUtility.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = stringUtility.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,10 @@
 				6121093D23E37C2200578F07 /* callback.h */,
 				6121093223E376ED00578F07 /* testFile.cpp */,
 				6121093423E3776C00578F07 /* testFile.h */,
+				6126D9EA23F8F4AC00B5CBC6 /* couchbase.cpp */,
+				6126D9EB23F8F4AC00B5CBC6 /* couchbase.hpp */,
+				6126D9ED23FA0C0400B5CBC6 /* stringUtility.cpp */,
+				6126D9EE23FA0C0400B5CBC6 /* stringUtility.hpp */,
 			);
 			path = earth;
 			sourceTree = "<group>";
@@ -132,6 +142,8 @@
 				6121093923E378AC00578F07 /* callback.cpp in Sources */,
 				6121092C23E374BE00578F07 /* main.cpp in Sources */,
 				6121093323E376ED00578F07 /* testFile.cpp in Sources */,
+				6126D9EF23FA0C0400B5CBC6 /* stringUtility.cpp in Sources */,
+				6126D9EC23F8F4AC00B5CBC6 /* couchbase.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
