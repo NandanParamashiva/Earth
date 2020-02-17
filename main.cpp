@@ -12,6 +12,7 @@
 #include "callback.h"
 #include "couchbase.hpp"
 #include "stringUtility.hpp"
+#include "airlineReservationMSFT.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -23,7 +24,9 @@ int main(int argc, const char * argv[]) {
     
     //couchbaseEntry();s
     
-    stringUtilityEntry();
+    //stringUtilityEntry();
+    
+    airlineReservationMSFTEntry();
     
     return 0;
 }

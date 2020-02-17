@@ -64,7 +64,7 @@ void split(string& input, vector<string>& result){
 #include <iterator>
           
 template <class Container>
-void split(const std::string& str, Container& cont, char delim = ' ')
+void split(const std::string& str, Container& cont, char delim)
 {
     std::size_t current, previous = 0;
     current = str.find(delim);
@@ -106,7 +106,7 @@ void stringUtilityEntry(){
         cout << "\nTC:" << endl;
         string s1("this is a test string");
         vector<string> res1;
-        split<vector<string>>(s1, res1);
+        split<vector<string>>(s1, res1, ' ');
         for(auto s:res1){
             cout << s << std::endl;
         }
